@@ -48,6 +48,7 @@ Developed by: PERARASU M
 RegisterNumber:  22008454        
 
 using NAND:
+
    module combo1(a,b,c,d,f);   
    
    input a,b,c,d;      
@@ -67,6 +68,7 @@ using NAND:
    endmodule      
 
 using NOR:
+
    module combo2(a,b,c,d,f);      
    
    input a,b,c,d;       
