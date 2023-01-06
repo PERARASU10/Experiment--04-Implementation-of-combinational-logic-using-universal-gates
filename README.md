@@ -47,27 +47,27 @@ Program to implement the given logic function using NAND and NOR gates and to ve
 Developed by: PERARASU M        
 RegisterNumber:  22008454        
 
-using NAND:        
+using NAND:
    module combo1(a,b,c,d,f);    
-   input a,b,c,d;     
+   input a,b,c,d;      
    output f;     
    wire p,q,r;     
-   assign p=(~c & b & a);      
-   assign q=(~d & c & ~a);     
-   assign r=(c & ~b & a);      
-   assign f=(~(~p & ~q & ~r));        
-   endmodule           
+   assign p=(~c & b & a);    
+   assign q=(~d & c & ~a);      
+   assign r=(c & ~b & a);       
+   assign f=(~(~p & ~q & ~r));       
+   endmodule      
 
-using NOR:       
-   module combo2(a,b,c,d,f);       
-   input a,b,c,d;          
-   output f;        
-   wire p,q,r;       
-   assign p=( c & ~b & a);      
-   assign  q=( d & ~c & a);      
-   assign  r=( c & ~b & a);        
-   assign  f=(~(~( p | q | r)));        
-   endmodule       
+using NOR:
+   module combo2(a,b,c,d,f);
+   input a,b,c,d;
+   output f;
+   wire p,q,r;
+   assign p=( c & ~b & a);
+   assign q=( d & ~c & a);
+   assign r=( c & ~b & a);
+   assign f=(~(~( p | q | r)));
+   endmodule
 
 ## RTL realization
 
