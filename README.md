@@ -64,9 +64,9 @@ using NOR:
    output f;        
    wire p,q,r;       
    assign p=( c & ~b & a);      
-   assign q=( d & ~c & a);      
-   assign r=( c & ~b & a);        
-   assign f=(~(~( p | q | r)));        
+   assign  q=( d & ~c & a);      
+   assign  r=( c & ~b & a);        
+   assign  f=(~(~( p | q | r)));        
    endmodule       
 
 ## RTL realization
@@ -86,7 +86,7 @@ TRUTH TABLE
 
 ![USING NAND GATE TRUTH TABLE](https://user-images.githubusercontent.com/118348589/211006860-84cb5096-3566-4112-8d82-8f705a49d27f.png)
 
-USING NOR GATE :
+USING NOR GATE :   
 
 RTL
 
